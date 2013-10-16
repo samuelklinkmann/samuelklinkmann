@@ -515,6 +515,11 @@ a:visited {
     clear: both;
     margin: 0 auto;
   }
+
+  /* line 108, ../compass/partials/_header.scss */
+  body {
+    font-size: 1em;
+  }
 }
 /* line 11, ../compass/style.scss */
 body {
