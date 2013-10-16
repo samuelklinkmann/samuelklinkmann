@@ -11,6 +11,6 @@ run lambda { |env|
       'Content-Type'  => 'text/html',
       'Cache-Control' => 'public, max-age=86400'
     },
-    File.open('index.php', File::RDONLY)
+    File.open('index.html', File::RDONLY)
   ]
 }
