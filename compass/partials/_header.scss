@@ -1,0 +1,108 @@
+header {
+	border-top:50px solid $primary-color;
+	padding: 100px 0 60px 0;
+}
+
+
+a {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	text-decoration:none;
+	color: $primary-color;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+	
+	&::before,
+	&:after {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: lighten($primary-color, 10%);
+		content: '';
+		opacity: 0;
+		-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+		-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+		transition: opacity 0.3s, transform 0.3s;
+		-webkit-transform: translateY(-10px);
+		-moz-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	&::before {
+		top: 0;
+		-webkit-transform: translateY(-10px);
+		-moz-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}	
+	&::after {
+		bottom: 0;
+		-webkit-transform: translateY(10px);
+		-moz-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	&:hover,
+	&:focus {
+		color: lighten($primary-color, 10%);
+	}
+	&:hover::before,
+	&:focus::before,
+	&:hover::after,
+	&:focus::after {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	&:visited{
+	color: darken($primary-color, 5%);
+	}
+}
+
+.round-img {
+	border: 1px solid rgba(177, 193, 201, .8);
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	-ms-border-radius: 999px;
+	-o-border-radius: 999px;
+	border-radius: 999px;
+	-webkit-box-shadow: 0 0 10px rgba(177, 193, 201, .6);
+	-moz-box-shadow: 0 0 10px rgba(177, 193, 201, .6);
+	-ms-box-shadow: 0 0 10px rgba(177, 193, 201, .6);
+	-o-box-shadow: 0 0 10px rgba(177, 193, 201, .6);
+	box-shadow: 0 0 10px rgba(177, 193, 201, .6);
+	height: 300px;
+	float:right;
+	overflow: hidden;
+	width: 300px;
+	position:relative;
+	margin: 0 0 0 40px;
+	background: $primary-color;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+	opacity:1;
+	img {
+		max-width: 100%;
+		height: auto;
+		
+
+	}
+
+	&:hover {
+		opacity:0.95;
+
+	}
+
+}
+
+@media only screen and (max-width: 650px){ 
+	.round-img {
+		float:none;
+		clear:both;
+		 margin: 0 auto;
+	}
+}
