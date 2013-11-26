@@ -375,6 +375,7 @@ ul {
   list-style: none;
   margin: 2em 0;
   padding: 0;
+
 }
 /* line 14, ../compass/modules/_setup.scss */
 ul li {
@@ -492,7 +493,6 @@ a:visited {
   width: 300px;
   position: relative;
   margin: 0 0 0 40px;
-  background: #de3434;
   -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
