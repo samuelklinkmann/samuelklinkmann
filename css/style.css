@@ -375,7 +375,6 @@ ul {
   list-style: none;
   margin: 2em 0;
   padding: 0;
-
 }
 /* line 14, ../compass/modules/_setup.scss */
 ul li {
@@ -498,25 +497,36 @@ a:visited {
   transition: opacity 0.3s ease;
   opacity: 1;
 }
-/* line 88, ../compass/partials/_header.scss */
+/* line 87, ../compass/partials/_header.scss */
 .round-img img {
   max-width: 100%;
   height: auto;
 }
-/* line 95, ../compass/partials/_header.scss */
+/* line 94, ../compass/partials/_header.scss */
 .round-img:hover {
   opacity: 0.95;
 }
 
 @media only screen and (max-width: 650px) {
-  /* line 103, ../compass/partials/_header.scss */
+  /* line 102, ../compass/partials/_header.scss */
+  header {
+    padding: 35px 0 30px 0;
+  }
+
+  /* line 105, ../compass/partials/_header.scss */
   .round-img {
     float: none;
     clear: both;
     margin: 0 auto;
+    height: 240px;
+    width: 240px;
+  }
+  /* line 111, ../compass/partials/_header.scss */
+  .round-img img {
+    width: 100%;
   }
 
-  /* line 108, ../compass/partials/_header.scss */
+  /* line 113, ../compass/partials/_header.scss */
   body {
     font-size: 1em;
   }
