@@ -84,18 +84,11 @@ a {
 	-moz-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
 	opacity:1;
+	background:rgba(177, 193, 201, .8);
 	img {
 		max-width: 100%;
 		height: auto;
-
-
 	}
-
-	&:hover {
-		opacity:0.95;
-
-	}
-
 }
 
 @media only screen and (max-width: 650px){
@@ -108,7 +101,9 @@ a {
 		margin: 0 auto;
 		height: 240px;
 		width:240px;
-		img {width:100%;}
+		img {
+			width:100%;
+		}
 	}
 	body {
 	font-size: 1em;
