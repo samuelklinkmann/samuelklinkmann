@@ -7,7 +7,7 @@ $(function () {
 
 $(document).ready(function() {
  $("#preload").load(function(e){
-        $("#preload").fadeIn(1000);
+        $(e.currentTarget).fadeIn(1000);
     });
 
 });
